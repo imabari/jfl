@@ -70,7 +70,7 @@ def win_point(x):
 df_total['勝敗'] = df_total.apply(lambda x: win_point(x), axis=1)
 df_total
 
-# 得点・失点・得失点・勝点　集計
+# 戦績表作成
 pv_score = df_total.pivot_table(
     values='勝敗',
     index=['チーム名', '戦'],
@@ -78,9 +78,11 @@ pv_score = df_total.pivot_table(
     aggfunc=sum,
     fill_value='')
 
+# 指定順に並び替え
 new_idx = pd.MultiIndex.from_product(
     [jfl_2019, ['H', 'A']], names=pv_score.index.names)
 score = pv_score.reindex(new_idx, columns=jfl_2019)
+
 score.fillna('', inplace=True)
 score
 
