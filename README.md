@@ -1,7 +1,6 @@
 # jfl
 
-+ ランキング作成
-+ 戦績表作成
++ 順位表・戦績表作成
 + 得点ランキング作成
 
 ## インストール
@@ -17,11 +16,8 @@ pip install pandas
 ## 実行
 
 ```
-# ランキング
-python ranking.py
-
-# 戦績表
-python senseki.py
+# 順位表・戦績表
+python jfl-ranking.py
 
 # 得点ランキング
 python goal.py
@@ -33,13 +29,9 @@ https://docs.google.com/spreadsheets/d/1_gNxJGnTVSQd3QjOjYygMRv3amYbjp7V4c5qXMa4
 ## Colaboratory
 
 ```
-# ランキング
-https://colab.research.google.com/drive/14cWovfTTUQ0fDswplXVsC6uOS75Kvq8z
-2019_ranking.xlsx
-
-# 戦績表
-https://colab.research.google.com/drive/1_bZ7GSVwhsH74haLPYxCUuzf-CH1oyc5
-2019_senseki.xlsx
+# 順位表・戦績表
+https://colab.research.google.com/drive/1cdiaeAUayKFqL-LD37VgrsClPUiHHMsW
+2019_jfl.xlsx
 
 # 得点ランキング
 https://colab.research.google.com/drive/1ABStdA94wNdI7kGaFRHlh7VkFihipN3i
